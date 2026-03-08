@@ -1,16 +1,50 @@
-# React + Vite
+# Library Patron Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React dashboard project that visualizes a library member's profile, reading progress, and checked-out books in a clean card-based UI.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project focuses on building an interactive front-end experience with clear data presentation and lightweight client-side filtering.
 
-## React Compiler
+The app includes:
+- A patron profile summary card
+- A reading progress card with a color-coded progress bar
+- A checked-out books card with overdue indicators
+- A live search input to filter books by title
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript (ES6+)
+- Inline CSS styling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features
+
+- Dynamic rendering of nested object/array data
+- Conditional UI states (active member status, late fee notice, overdue labels)
+- Book sorting by due date
+- Case-insensitive search with `useState`
+- Reusable card layout for consistent visual structure
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Project Goal
+
+I built this project to strengthen core React fundamentals:
+- JSX expressions
+- Conditional rendering
+- List rendering with `.map()`
+- Filtering and derived data with `.filter()` and `.sort()`
+- Controlled inputs and state updates
